@@ -20,12 +20,12 @@ For example, if I have a directory `~/Desktop/illustrator-exports/cool-sprites` 
 
 You would reference individual members of the sprite sheet as such:
 ```
-<svg">
+<svg>
     <use href="#totally_cool_icon" />
 </svg>
 ```
 ```
-<svg">
+<svg>
     <use href="#nice_icon" />
 </svg>
 ```
