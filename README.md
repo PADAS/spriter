@@ -18,7 +18,7 @@ For example, if I have a directory `~/Desktop/illustrator-exports/cool-sprites` 
 - nice_icon.svg
 - totally_cool_icon.svg
 
-You would reference individual members of the sprite sheet as such:
+I would first run `sh generate_sprites.sh ~/Desktop/illustrator-exports/cool-sprites`, inline the output SVG code into my project, and then reference individual members of the sprite sheet as such:
 ```
 <svg>
     <use href="#totally_cool_icon" />
