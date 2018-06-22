@@ -1,0 +1,21 @@
+{
+    "mode": {
+        "symbol": {
+            "sprite": "../DAS_icon_sprite.svg",
+            "render": {
+                "css": false
+            }
+        }
+    },
+    "dest": "output",
+    "shape": {
+        "transform": [
+            { "svgo": {
+                "plugins": [
+                    { "removeStyleElement": true },
+                    { "removeAttrs": { "attrs": ["class", "style", "fill", "stroke"] } }
+                ]
+            }}
+        ]
+    }
+}
