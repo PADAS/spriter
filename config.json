@@ -1,13 +1,13 @@
 {
     "mode": {
         "symbol": {
-            "sprite": "../DAS_icon_sprite.svg",
+            "sprite": "../event-svg-sprite.svg",
             "render": {
                 "css": false
             }
         }
     },
-    "dest": "output",
+    "dest": "../dist/public/assets/images/",
     "shape": {
         "transform": [
             { "svgo": {
