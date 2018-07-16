@@ -1,11 +1,13 @@
 {
     "mode": {
         "symbol": {
+            "sprite": "../event-svg-sprite.svg",
             "render": {
                 "css": false
             }
         }
     },
+    "dest": "../client/assets/images/",
     "shape": {
         "transform": [
             { "svgo": {
