@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "phantomjs-prebuilt": "^2.1.16",
     "svg-sprite": "^1.4.0"
   }
 }
