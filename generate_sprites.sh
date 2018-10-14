@@ -1,1 +1,3 @@
-eval $(npm bin)/svg-sprite -s --config='config.json' $1'/**/*.svg'   
+CONFIG_NAME="${2:-config.json}"
+eval $(npm bin)/svg-sprite -s --config=$CONFIG_NAME $1'/**/*.svg'   
+
