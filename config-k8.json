@@ -1,0 +1,21 @@
+{
+    "mode": {
+        "symbol": {
+            "sprite": "event-svg-sprite.svg",
+            "render": {
+                "css": false
+            }
+        }
+    },
+    "dest": "./sprite-output/",
+    "shape": {
+        "transform": [
+            { "svgo": {
+                "plugins": [
+                    { "removeStyleElement": true },
+                    { "removeAttrs": { "attrs": ["class", "style", "fill", "stroke"] } }
+                ]
+            }}
+        ]
+    }
+}
