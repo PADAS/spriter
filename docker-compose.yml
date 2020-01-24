@@ -1,0 +1,15 @@
+version: '3'
+services:
+  spriter:
+    build: .
+    restart: always
+    volumes:
+      - ./sprite_src:/spriter/sprite_src
+      - ./output:/spriter/output
+    environment:
+      SOURCE_DIR: sprite_src
+      DEST_DIR: output
+      SPRITE_NAME: sprite.svg
+      SHELL: /bin/sh
+    logging:
+      driver: "json-file"

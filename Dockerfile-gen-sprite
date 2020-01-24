@@ -1,0 +1,6 @@
+FROM node:alpine
+ADD package.json /
+RUN npm i
+ADD generate_sprites.sh /
+ADD config.json /
+RUN chmod +x ./generate_sprites.sh
