@@ -1,21 +1,32 @@
 {
-    "mode": {
-        "symbol": {
-            "sprite": "../event-svg-sprite.svg",
-            "render": {
-                "css": false
-            }
-        }
-    },
-    "dest": ".",
-    "shape": {
-        "transform": [
-            { "svgo": {
-                "plugins": [
-                    { "removeStyleElement": true },
-                    { "removeAttrs": { "attrs": ["class", "style", "fill", "stroke"] } }
-                ]
-            }}
-        ]
+  "mode": {
+    "symbol": {
+      "sprite": "../event-svg-sprite.svg",
+      "render": {
+        "css": false
+      }
     }
+  },
+  "dest": ".",
+  "shape": {
+    "transform": [
+      {
+        "svgo": {
+          "plugins": [
+            "preset-default",
+            {
+              "name": "removeStyleElement",
+              "active": true
+            },
+            {
+              "name": "removeAttrs",
+              "params": {
+                "attrs": "(class|style|fill|stroke)"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

@@ -1,14 +1,17 @@
 {
   "name": "spriter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Build SVG symbol sprites for DAS using svg-sprite",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "bun scripts/generate.ts"
   },
-  "author": "",
-  "license": "ISC",
+  "packageManager": "bun@1.3.11",
   "dependencies": {
-    "svg-sprite": "^1.4.0"
+    "svg-sprite": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0"
   }
 }
